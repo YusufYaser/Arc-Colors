@@ -54,6 +54,8 @@ function copyTextToClipboard(text) {
 
 window.onload = function () {
     let content = document.getElementById("content")
+    let nocolors = document.getElementById("nocolors")
+    nocolors.style.display = 'none'
     
     vars.forEach((v) => {
         let div = document.createElement("div")
@@ -67,4 +69,17 @@ window.onload = function () {
 
         content.appendChild(div)
     })
+
+    let test = getComputedStyle(document.documentElement).getPropertyValue(vars[0])
+    if (test == "") {
+        nocolors.style.display = 'block'
+        let interval = null
+        interval = setInterval(() => {
+            let test = getComputedStyle(document.documentElement).getPropertyValue(vars[0])
+            if (test != "") {
+                nocolors.style.display = 'none'
+                clearInterval(interval)
+            }
+        }, 100)
+    }
 }

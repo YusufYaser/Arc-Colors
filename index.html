@@ -4,14 +4,22 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Arc Browser Colors</title>
         <meta name="description" content="This is a simple site to see the colors that you can use while making boosts in Arc">
+        <meta name="keywords" content="arc, arc colors, arc colors viewer, arc browser, arc boosts">
+
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ginto">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
         <link rel="stylesheet" href="style.css">
+
         <script src="script.js"></script>
     </head>
     <body>
+        <a href="https://github.com/YusufYaser/Arc-Colors" target="_blank">
+            <img class="gh" src="github.svg"/>
+        </a>
+
         <center>
             <h1>Arc Browsers Colors</h1>
             <p>
@@ -20,11 +28,14 @@
                 <b>PROTIP:</b> you can use Little Arc <b>(⌥⌘N)</b> to see the colors while making your boost!
                 <br/><br/>
                 You can click on one of the bottom items to copy.
-                <br/><br/>
-                <a href="https://github.com/YusufYaser/Arc-Colors">GitHub</a>
-                <br/><br/>
             </p>
+            <div class="alert" id="nocolors">
+                <b>Something seems wrong</b><br/><br/>
+                Colors seem to not be showing.<br/>
+                Please make sure you're using Arc. If you are, then try going to the "+" and make a style boost for this site.
+            </div>
             <div id="content"></div>
+            <p id="bottomtext">by Yusuf Yaser :P</p>
         </center>
     </body>
 </html>

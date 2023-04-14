@@ -11,13 +11,38 @@ a {
     font-size: 24px;
 }
 
+.gh {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 16px;
+    aspect-ratio: 1;
+    height: 48px;
+    transition-duration: 250ms;
+}
+
+.gh:hover {
+    opacity: .5;
+}
+
+.alert {
+    background-color: rgb(255, 40, 40);
+    width: 70%;
+    margin: 25px;
+    padding: 8px;
+}
+
+#bottomtext {
+    color: rgb(35, 35, 35);
+    font-weight: bold;
+}
+
 #content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     
     width: 70%;
-    margin-bottom: 100px;
 }
 
 .item {
